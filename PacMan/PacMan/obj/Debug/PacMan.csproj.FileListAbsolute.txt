@@ -23,3 +23,16 @@ C:\Users\Sergey\Desktop\PacMan\PacMan\obj\Debug\PacMan_MarkupCompile.cache
 C:\Users\Sergey\Desktop\PacMan\PacMan\obj\Debug\PacMan.g.resources
 C:\Users\Sergey\Desktop\PacMan\PacMan\obj\Debug\PacMan.Properties.Resources.resources
 C:\Users\Sergey\Desktop\PacMan\PacMan\obj\Debug\PacMan.csproj.GenerateResource.Cache
+D:\Git\MyProjects\PacMan\PacMan\bin\Debug\PacMan.exe.config
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\PacMan.exe
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\PacMan.pdb
+D:\Git\MyProjects\PacMan\PacMan\bin\Debug\PacMan.exe
+D:\Git\MyProjects\PacMan\PacMan\bin\Debug\PacMan.pdb
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\PacMan.csprojResolveAssemblyReference.cache
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\MainWindow.baml
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\MainWindow.g.cs
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\App.g.cs
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\PacMan_MarkupCompile.cache
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\PacMan.g.resources
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\PacMan.Properties.Resources.resources
+D:\Git\MyProjects\PacMan\PacMan\obj\Debug\PacMan.csproj.GenerateResource.Cache

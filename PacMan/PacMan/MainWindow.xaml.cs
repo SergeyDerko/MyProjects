@@ -34,8 +34,6 @@ namespace PacMan
         //переменные для координат Hunter
         public int Hunt4Column;
         public int Hunt4Row;
-        //элемент блокировки
-        readonly object _block = new object();
         //флаг старта - стопа
         private bool _start;
         //флаг проверки работы счетчика
@@ -55,7 +53,7 @@ namespace PacMan
             Box.Text = "Spase - Старт,   P - пауза" +
                        " Приятной игры! :)";
 
-            
+
         }
 
         private void StartPos()
@@ -105,7 +103,7 @@ namespace PacMan
             Grid.SetColumn(Woll48, 3);
             Grid.SetRow(Woll48, 12);
             _field[12, 3] = Wall;
-            
+
         }
 
         //Задаем стенке прочность :)
@@ -147,9 +145,9 @@ namespace PacMan
             _field[7, 14] = Wall;
             _field[8, 13] = Wall;
             _field[2, 13] = Wall;
-           
+
             //O
-            
+
             _field[13, 2] = Wall;
             _field[14, 2] = Wall;
             _field[15, 2] = Wall;
@@ -188,7 +186,7 @@ namespace PacMan
             _field[18, 15] = Wall;
 
             //убираем ловушки для призраков :)
-           
+
             _field[3, 9] = Wall;
             _field[4, 9] = Wall;
             _field[5, 9] = Wall;
@@ -1719,11 +1717,7 @@ namespace PacMan
             if (e.Key == Key.Down)
             {
                 if (_start)
-                    lock (_block)
-                    {
-                        PacmanDuwn();
-                    }
-
+                    PacmanDuwn();
             }
 
 
@@ -1731,33 +1725,21 @@ namespace PacMan
             if (e.Key == Key.Left)
             {
                 if (_start)
-                    lock (_block)
-                    {
-                        PacmanLeft();
-                    }
-
+                    PacmanLeft();
             }
 
             else
             if (e.Key == Key.Right)
             {
                 if (_start)
-                    lock (_block)
-                    {
-                        PacmanRight();
-                    }
-
+                    PacmanRight();
             }
 
             else
             if (e.Key == Key.Up)
             {
                 if (_start)
-                    lock (_block)
-                    {
-                        PacmanUp();
-                    }
-
+                    PacmanUp();
             }
             else
             if (e.Key == Key.Space)
@@ -1765,14 +1747,11 @@ namespace PacMan
                 _start = true;
                 if (_timer)
                     Timer();
-
-
             }
             else
             if (e.Key == Key.P)
             {
                 _start = false;
-
             }
 
         }
@@ -1790,14 +1769,12 @@ namespace PacMan
         {
             if (_start)
             {
-                lock (_block)
-                {
-                    HunterGo();
-                    HunterGo1();
-                    HunterGo2();
-                    HunterGo3();
-                    HunterGo4();
-                }
+
+                HunterGo();
+                HunterGo1();
+                HunterGo2();
+                HunterGo3();
+                HunterGo4();
             }
         }
         //метод выиграша
