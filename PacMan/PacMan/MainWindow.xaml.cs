@@ -239,10 +239,9 @@ namespace PacMan
 
 
 
-        private void HunterGo()
+        private void HunterGo(ref int row, ref int column , Image x)
         {
-            _field[HuntRow, HuntColumn] = 0;
-            // bool flag = true;
+            _field[row, column] = 0;
             int a = 0;
             while (a < 5000)
             {
@@ -251,9 +250,9 @@ namespace PacMan
                 {
                     try
                     {
-                        if (_field[HuntRow, HuntColumn + 1] == 0 || _field[HuntRow, HuntColumn + 1] == Pac)
+                        if (_field[row, column + 1] == 0 || _field[row, column + 1] == Pac)
                         {
-                            if (_field[HuntRow, HuntColumn + 1] == Pac)
+                            if (_field[row, column + 1] == Pac)
                             {
                                 Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
                                 _win = 20;
@@ -266,15 +265,15 @@ namespace PacMan
                                 Grid.SetRow(Woll48, 12);
                                 _field[12, 3] = Wall;
                             }
-                            HuntColumn += 1;
-                            Grid.SetColumn(HunteR, HuntColumn);
-                            _field[HuntRow, HuntColumn] = Hunt;
+                            column += 1;
+                            Grid.SetColumn(x, column);
+                            _field[row, column] = Hunt;
                             a = 5001;
                             // flag = false;
                         }
-                        else if (_field[HuntRow, HuntColumn - 1] == 0 || _field[HuntRow, HuntColumn - 1] == Pac)
+                        else if (_field[row, column - 1] == 0 || _field[row, column - 1] == Pac)
                         {
-                            if (_field[HuntRow, HuntColumn - 1] == Pac)
+                            if (_field[row, column - 1] == Pac)
                             {
                                 Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
                                 _win = 20;
@@ -287,9 +286,9 @@ namespace PacMan
                                 Grid.SetRow(Woll48, 12);
                                 _field[12, 3] = Wall;
                             }
-                            HuntColumn -= 1;
-                            Grid.SetColumn(HunteR, HuntColumn);
-                            _field[HuntRow, HuntColumn] = Hunt;
+                            column -= 1;
+                            Grid.SetColumn(x, column);
+                            _field[row, column] = Hunt;
                             a = 5001;
                             //  flag = false;
                         }
@@ -298,10 +297,10 @@ namespace PacMan
                     catch (Exception)
                     {
 
-                        if (HuntColumn == 0)
+                        if (column == 0)
                         {
-                            HuntColumn = 19;
-                            if (_field[HuntRow, HuntColumn] == Pac)
+                            column = 19;
+                            if (_field[row, column] == Pac)
                             {
                                 Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
                                 _win = 20;
@@ -314,15 +313,15 @@ namespace PacMan
                                 Grid.SetRow(Woll48, 12);
                                 _field[12, 3] = Wall;
                             }
-                            Grid.SetColumn(HunteR, HuntColumn);
-                            _field[HuntRow, HuntColumn] = Hunt;
+                            Grid.SetColumn(x, column);
+                            _field[row, column] = Hunt;
                             a = 5001;
                             // flag = false;
                         }
-                        else if (HuntColumn == 19)
+                        else if (column == 19)
                         {
-                            HuntColumn = 0;
-                            if (_field[HuntRow, HuntColumn] == Pac)
+                            column = 0;
+                            if (_field[row, column] == Pac)
                             {
                                 Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
                                 _win = 20;
@@ -335,10 +334,9 @@ namespace PacMan
                                 Grid.SetRow(Woll48, 12);
                                 _field[12, 3] = Wall;
                             }
-                            Grid.SetColumn(HunteR, HuntColumn);
-                            _field[HuntRow, HuntColumn] = Hunt;
+                            Grid.SetColumn(x, column);
+                            _field[row, column] = Hunt;
                             a = 5001;
-                            // flag = false;
                         }
                     }
 
@@ -349,9 +347,9 @@ namespace PacMan
                 {
                     try
                     {
-                        if (_field[HuntRow - 1, HuntColumn] == 0 || _field[HuntRow - 1, HuntColumn] == Pac)
+                        if (_field[row - 1, column] == 0 || _field[row - 1, column] == Pac)
                         {
-                            if (_field[HuntRow - 1, HuntColumn] == Pac)
+                            if (_field[row - 1, column] == Pac)
                             {
                                 Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
                                 _win = 20;
@@ -364,15 +362,14 @@ namespace PacMan
                                 Grid.SetRow(Woll48, 12);
                                 _field[12, 3] = Wall;
                             }
-                            HuntRow -= 1;
-                            Grid.SetRow(HunteR, HuntRow);
-                            _field[HuntRow, HuntColumn] = Hunt;
+                            row -= 1;
+                            Grid.SetRow(x, row);
+                            _field[row, column] = Hunt;
                             a = 5001;
-                            // flag = false;
                         }
-                        else if (_field[HuntRow + 1, HuntColumn] == 0 || _field[HuntRow + 1, HuntColumn] == Pac)
+                        else if (_field[row + 1, column] == 0 || _field[row + 1, column] == Pac)
                         {
-                            if (_field[HuntRow + 1, HuntColumn] == Pac)
+                            if (_field[row + 1, column] == Pac)
                             {
                                 Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
                                 _win = 20;
@@ -385,21 +382,19 @@ namespace PacMan
                                 Grid.SetRow(Woll48, 12);
                                 _field[12, 3] = Wall;
                             }
-                            HuntRow += 1;
-                            Grid.SetRow(HunteR, HuntRow);
-                            _field[HuntRow, HuntColumn] = Hunt;
+                            row += 1;
+                            Grid.SetRow(x, row);
+                            _field[row, column] = Hunt;
                             a = 5001;
-                            // flag = false;
-
                         }
                     }
                     catch (Exception)
                     {
 
-                        if (HuntRow == 0)
+                        if (row == 0)
                         {
-                            HuntRow = 19;
-                            if (_field[HuntRow, HuntColumn] == Pac)
+                            row = 19;
+                            if (_field[row, column] == Pac)
                             {
                                 Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
                                 _win = 20;
@@ -412,15 +407,14 @@ namespace PacMan
                                 Grid.SetRow(Woll48, 12);
                                 _field[12, 3] = Wall;
                             }
-                            Grid.SetRow(HunteR, HuntRow);
-                            _field[HuntRow, HuntColumn] = Hunt;
+                            Grid.SetRow(x, row);
+                            _field[row, column] = Hunt;
                             a = 5001;
-                            // flag = false;
                         }
-                        else if (HuntRow == 19)
+                        else if (row == 19)
                         {
-                            HuntRow = 0;
-                            if (_field[HuntRow, HuntColumn] == Pac)
+                            row = 0;
+                            if (_field[row, column] == Pac)
                             {
                                 Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
                                 _win = 20;
@@ -433,830 +427,16 @@ namespace PacMan
                                 Grid.SetRow(Woll48, 12);
                                 _field[12, 3] = Wall;
                             }
-                            Grid.SetRow(HunteR, HuntRow);
-                            _field[HuntRow, HuntColumn] = Hunt;
+                            Grid.SetRow(x, row);
+                            _field[row, column] = Hunt;
                             a = 5001;
-                            // flag = false;
                         }
                     }
                 }
                 a++;
             }
         }
-        private void HunterGo1()
-        {
-            _field[Hunt1Row, Hunt1Column] = 0;
-            // bool flag = true;
-            int a = 0;
-            while (a < 5000)
-            {
-                var step = new Random().Next(0, 5);
-                if (step / 2 == 2 || step / 2 == 1)
-                {
-                    try
-                    {
-                        if (_field[Hunt1Row, Hunt1Column + 1] == 0 || _field[Hunt1Row, Hunt1Column + 1] == Pac)
-                        {
-                            if (_field[Hunt1Row, Hunt1Column + 1] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt1Column += 1;
-                            Grid.SetColumn(HunteR1, Hunt1Column);
-                            _field[Hunt1Row, Hunt1Column] = Hunt;
-                            a = 5001;
-                            //flag = false;
-                        }
-                        else if (_field[Hunt1Row, Hunt1Column - 1] == 0 || _field[Hunt1Row, Hunt1Column - 1] == Pac)
-                        {
-                            if (_field[Hunt1Row, Hunt1Column - 1] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt1Column -= 1;
-                            Grid.SetColumn(HunteR1, Hunt1Column);
-                            _field[Hunt1Row, Hunt1Column] = Hunt;
-                            a = 5001;
-                            //flag = false;
 
-                        }
-                    }
-                    catch (Exception)
-                    {
-
-                        if (Hunt1Column == 0)
-                        {
-                            Hunt1Column = 19;
-                            if (_field[Hunt1Row, Hunt1Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetColumn(HunteR1, Hunt1Column);
-                            _field[Hunt1Row, Hunt1Column] = Hunt;
-                            a = 5001;
-                            //flag = false;
-                        }
-                        else if (Hunt1Column == 19)
-                        {
-                            Hunt1Column = 0;
-                            if (_field[Hunt1Row, Hunt1Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetColumn(HunteR1, Hunt1Column);
-                            _field[Hunt1Row, Hunt1Column] = Hunt;
-                            a = 5001;
-                            // flag = false;
-                        }
-                    }
-                }
-
-
-                else
-                {
-                    try
-                    {
-                        if (_field[Hunt1Row - 1, Hunt1Column] == 0 || _field[Hunt1Row - 1, Hunt1Column] == Pac)
-                        {
-                            if (_field[Hunt1Row - 1, Hunt1Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt1Row -= 1;
-                            Grid.SetRow(HunteR1, Hunt1Row);
-                            _field[Hunt1Row, Hunt1Column] = Hunt;
-                            a = 5001;
-                            //flag = false;
-                        }
-                        else if (_field[Hunt1Row + 1, Hunt1Column] == 0 || _field[Hunt1Row + 1, Hunt1Column] == Pac)
-                        {
-                            if (_field[Hunt1Row + 1, Hunt1Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt1Row += 1;
-                            Grid.SetRow(HunteR1, Hunt1Row);
-                            _field[Hunt1Row, Hunt1Column] = Hunt;
-                            a = 5001;
-                            //flag = false;
-
-                        }
-                    }
-                    catch (Exception)
-                    {
-
-                        if (Hunt1Row == 0)
-                        {
-                            Hunt1Row = 19;
-                            if (_field[Hunt1Row, Hunt1Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetRow(HunteR1, Hunt1Row);
-                            _field[Hunt1Row, Hunt1Column] = Hunt;
-                            a = 5001;
-                            //flag = false;
-                        }
-                        else if (Hunt1Row == 19)
-                        {
-                            Hunt1Row = 0;
-                            if (_field[Hunt1Row, Hunt1Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetRow(HunteR1, Hunt1Row);
-                            _field[Hunt1Row, Hunt1Column] = Hunt;
-                            a = 5001;
-                            // flag = false;
-                        }
-                    }
-
-                }
-                a++;
-            }
-        }
-        private void HunterGo2()
-        {
-            _field[Hunt2Row, Hunt2Column] = 0;
-            //bool flag = true;
-            int a = 0;
-            while (a < 5000)
-            {
-                var step = new Random().Next(0, 5);
-                if (step / 2 == 2 || step / 2 == 1)
-                {
-                    try
-                    {
-                        if (_field[Hunt2Row, Hunt2Column + 1] == 0 || _field[Hunt2Row, Hunt2Column + 1] == Pac)
-                        {
-                            if (_field[Hunt2Row, Hunt2Column + 1] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt2Column += 1;
-                            Grid.SetColumn(HunteR2, Hunt2Column);
-                            _field[Hunt2Row, Hunt2Column] = Hunt;
-                            a = 50001;
-                            //flag = false;
-                        }
-                        else if (_field[Hunt2Row, Hunt2Column - 1] == 0 || _field[Hunt2Row, Hunt2Column - 1] == Pac)
-                        {
-                            if (_field[Hunt2Row, Hunt2Column - 1] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt2Column -= 1;
-                            Grid.SetColumn(HunteR2, Hunt2Column);
-                            _field[Hunt2Row, Hunt2Column] = Hunt;
-                            a = 50001;
-                            // flag = false;
-                        }
-                    }
-                    catch (Exception)
-                    {
-
-                        if (Hunt2Column == 0)
-                        {
-                            Hunt2Column = 19;
-                            if (_field[Hunt2Row, Hunt2Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetColumn(HunteR2, Hunt2Column);
-                            _field[Hunt2Row, Hunt2Column] = Hunt;
-                            a = 50001;
-                            //flag = false;
-                        }
-                        else if (Hunt2Column == 19)
-                        {
-                            Hunt2Column = 0;
-                            if (_field[Hunt2Row, Hunt2Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetColumn(HunteR2, Hunt2Column);
-                            _field[Hunt2Row, Hunt2Column] = Hunt;
-                            a = 50001;
-                            // flag = false;
-                        }
-                    }
-                }
-
-
-                else
-                {
-                    try
-                    {
-                        if (_field[Hunt2Row - 1, Hunt2Column] == 0 || _field[Hunt2Row - 1, Hunt2Column] == Pac)
-                        {
-                            if (_field[Hunt2Row - 1, Hunt2Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt2Row -= 1;
-                            Grid.SetRow(HunteR2, Hunt2Row);
-                            _field[Hunt2Row, Hunt2Column] = Hunt;
-                            a = 50001;
-                            //flag = false;
-                        }
-                        else if (_field[Hunt2Row + 1, Hunt2Column] == 0 || _field[Hunt2Row + 1, Hunt2Column] == Pac)
-                        {
-                            if (_field[Hunt2Row + 1, Hunt2Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt2Row += 1;
-                            Grid.SetRow(HunteR2, Hunt2Row);
-                            _field[Hunt2Row, Hunt2Column] = Hunt;
-                            a = 50001;
-                            // flag = false;
-
-                        }
-                    }
-                    catch (Exception)
-                    {
-
-                        if (Hunt2Row == 0)
-                        {
-                            Hunt2Row = 19;
-                            if (_field[Hunt2Row, Hunt2Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetRow(HunteR2, Hunt2Row);
-                            _field[Hunt2Row, Hunt2Column] = Hunt;
-                            a = 50001;
-                            //flag = false;
-                        }
-                        else if (Hunt2Row == 19)
-                        {
-                            Hunt2Row = 0;
-                            if (_field[Hunt2Row, Hunt2Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetRow(HunteR2, Hunt2Row);
-                            _field[Hunt2Row, Hunt2Column] = Hunt;
-                            a = 50001;
-                            //flag = false;
-                        }
-                    }
-
-                }
-                a++;
-            }
-        }
-        private void HunterGo3()
-        {
-            _field[Hunt3Row, Hunt3Column] = 0;
-            // bool flag = true;
-            int a = 0;
-            while (a < 5000)
-            {
-                var step = new Random().Next(0, 5);
-                if (step / 2 == 2 || step / 2 == 1)
-                {
-                    try
-                    {
-                        if (_field[Hunt3Row, Hunt3Column + 1] == 0 || _field[Hunt3Row, Hunt3Column + 1] == Pac)
-                        {
-                            if (_field[Hunt3Row, Hunt3Column + 1] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt3Column += 1;
-                            Grid.SetColumn(HunteR3, Hunt3Column);
-                            _field[Hunt3Row, Hunt3Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-                        }
-                        else if (_field[Hunt3Row, Hunt3Column - 1] == 0 || _field[Hunt3Row, Hunt3Column - 1] == Pac)
-                        {
-                            if (_field[Hunt3Row, Hunt3Column - 1] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt3Column -= 1;
-                            Grid.SetColumn(HunteR3, Hunt3Column);
-                            _field[Hunt3Row, Hunt3Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-
-                        }
-                    }
-                    catch (Exception)
-                    {
-
-                        if (Hunt3Column == 0)
-                        {
-                            Hunt3Column = 19;
-                            if (_field[Hunt3Row, Hunt3Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetColumn(HunteR3, Hunt3Column);
-                            _field[Hunt3Row, Hunt3Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-                        }
-                        else if (Hunt3Column == 19)
-                        {
-                            Hunt3Column = 0;
-                            if (_field[Hunt3Row, Hunt3Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetColumn(HunteR3, Hunt3Column);
-                            _field[Hunt3Row, Hunt3Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-                        }
-                    }
-                }
-
-
-                else
-                {
-                    try
-                    {
-                        if (_field[Hunt3Row - 1, Hunt3Column] == 0 || _field[Hunt3Row - 1, Hunt3Column] == Pac)
-                        {
-                            if (_field[Hunt3Row - 1, Hunt3Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt3Row -= 1;
-                            Grid.SetRow(HunteR3, Hunt3Row);
-                            _field[Hunt3Row, Hunt3Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-                        }
-                        else if (_field[Hunt3Row + 1, Hunt3Column] == 0 || _field[Hunt3Row + 1, Hunt3Column] == Pac)
-                        {
-                            if (_field[Hunt3Row + 1, Hunt3Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt3Row += 1;
-                            Grid.SetRow(HunteR3, Hunt3Row);
-                            _field[Hunt3Row, Hunt3Column] = Hunt;
-                            a = 5000;
-                            // flag = false;
-
-                        }
-                    }
-                    catch (Exception)
-                    {
-
-                        if (Hunt3Row == 0)
-                        {
-                            Hunt3Row = 19;
-                            if (_field[Hunt3Row, Hunt3Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetRow(HunteR3, Hunt3Row);
-                            _field[Hunt3Row, Hunt3Column] = Hunt;
-                            a = 5000;
-                            // flag = false;
-                        }
-                        else if (Hunt3Row == 19)
-                        {
-                            Hunt3Row = 0;
-                            if (_field[Hunt3Row, Hunt3Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetRow(HunteR3, Hunt3Row);
-                            _field[Hunt3Row, Hunt3Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-                        }
-                    }
-                }
-                a++;
-            }
-        }
-        private void HunterGo4()
-        {
-            _field[Hunt4Row, Hunt4Column] = 0;
-            //bool flag = true;
-            int a = 0;
-            while (a < 5000)
-            {
-                var step = new Random().Next(0, 5);
-                if (step / 2 == 2 || step / 2 == 1)
-                {
-                    try
-                    {
-                        if (_field[Hunt4Row, Hunt4Column + 1] == 0 || _field[Hunt4Row, Hunt4Column + 1] == Pac)
-                        {
-                            if (_field[Hunt4Row, Hunt4Column + 1] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt4Column += 1;
-                            Grid.SetColumn(HunteR4, Hunt4Column);
-                            _field[Hunt4Row, Hunt4Column] = Hunt;
-                            a = 5000;
-                            // flag = false;
-                        }
-                        else if (_field[Hunt4Row, Hunt4Column - 1] == 0 || _field[Hunt4Row, Hunt4Column - 1] == Pac)
-                        {
-                            if (_field[Hunt4Row, Hunt4Column - 1] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt4Column -= 1;
-                            Grid.SetColumn(HunteR4, Hunt4Column);
-                            _field[Hunt4Row, Hunt4Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-
-                        }
-                    }
-                    catch (Exception)
-                    {
-
-                        if (Hunt4Column == 0)
-                        {
-                            Hunt4Column = 19;
-                            if (_field[Hunt4Row, Hunt4Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetColumn(HunteR4, Hunt4Column);
-                            _field[Hunt4Row, Hunt4Column] = Hunt;
-                            a = 5000;
-                            // flag = false;
-                        }
-                        else if (Hunt4Column == 19)
-                        {
-                            Hunt4Column = 0;
-                            if (_field[Hunt4Row, Hunt4Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetColumn(HunteR4, Hunt4Column);
-                            _field[Hunt4Row, Hunt4Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-                        }
-                    }
-                }
-
-
-                else
-                {
-                    try
-                    {
-                        if (_field[Hunt4Row - 1, Hunt4Column] == 0 || _field[Hunt4Row - 1, Hunt4Column] == Pac)
-                        {
-                            if (_field[Hunt4Row - 1, Hunt4Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt4Row -= 1;
-                            Grid.SetRow(HunteR4, Hunt4Row);
-                            _field[Hunt4Row, Hunt4Column] = Hunt;
-                            a = 5000;
-                            // flag = false;
-                        }
-                        else if (_field[Hunt4Row + 1, Hunt4Column] == 0 || _field[Hunt4Row + 1, Hunt4Column] == Pac)
-                        {
-                            if (_field[Hunt4Row + 1, Hunt4Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Hunt4Row += 1;
-                            Grid.SetRow(HunteR4, Hunt4Row);
-                            _field[Hunt4Row, Hunt4Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-
-                        }
-                    }
-                    catch (Exception)
-                    {
-
-                        if (Hunt4Row == 0)
-                        {
-                            Hunt4Row = 19;
-                            if (_field[Hunt4Row, Hunt4Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetRow(HunteR4, Hunt4Row);
-                            _field[Hunt4Row, Hunt4Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-                        }
-                        else if (Hunt4Row == 19)
-                        {
-                            Hunt4Row = 0;
-                            if (_field[Hunt4Row, Hunt4Column] == Pac)
-                            {
-                                Box.Text = "А-а-а-а-а-а!!! Яблоки утерянны!";
-                                _win = 20;
-                                Column = 0;
-                                Rou = 0;
-                                _field[Rou, Column] = Pac;
-                                Grid.SetColumn(Pacman, Column);
-                                Grid.SetRow(Pacman, Rou);
-                                Grid.SetColumn(Woll48, 3);
-                                Grid.SetRow(Woll48, 12);
-                                _field[12, 3] = Wall;
-                            }
-                            Grid.SetRow(HunteR4, Hunt4Row);
-                            _field[Hunt4Row, Hunt4Column] = Hunt;
-                            a = 5000;
-                            //flag = false;
-                        }
-                    }
-
-                }
-                a++;
-            }
-        }
         #endregion
 
         //передвижения Пакмана
@@ -1770,14 +950,15 @@ namespace PacMan
             if (_start)
             {
 
-                HunterGo();
-                HunterGo1();
-                HunterGo2();
-                HunterGo3();
-                HunterGo4();
+                HunterGo(ref HuntRow, ref HuntColumn, HunteR);
+                HunterGo(ref Hunt1Row, ref Hunt1Column, HunteR1);
+                HunterGo(ref Hunt2Row, ref Hunt2Column, HunteR2);
+                HunterGo(ref Hunt3Row, ref Hunt3Column, HunteR3);
+                HunterGo(ref Hunt4Row, ref Hunt4Column, HunteR4);
             }
         }
         //метод выиграша
+
         private void WinerPac()
         {
             Box.Text = "ПОБЕДА!!!";
@@ -1786,6 +967,6 @@ namespace PacMan
             _win = 20;
             StartPos();
         }
-    }
 
+    }
 }
