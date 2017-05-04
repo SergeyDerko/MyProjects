@@ -1,0 +1,220 @@
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\Test.dll.config
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\Test.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\Test.pdb
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\Antlr3.Runtime.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\EntityFramework.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\EntityFramework.SqlServer.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\Newtonsoft.Json.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Net.Http.Extensions.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Net.Http.Formatting.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Net.Http.Primitives.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Helpers.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Http.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Http.WebHost.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Mvc.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Optimization.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Providers.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Razor.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.WebPages.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\WebGrease.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\Antlr3.Runtime.pdb
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\EntityFramework.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\EntityFramework.SqlServer.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\Newtonsoft.Json.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Net.Http.Extensions.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Net.Http.Formatting.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Net.Http.Primitives.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Helpers.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Http.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Http.WebHost.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Mvc.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Optimization.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Providers.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.Razor.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.WebPages.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sergey\Desktop\Тестовое задание\Test\obj\Debug\Test.csproj.App.config
+C:\Users\Sergey\Desktop\Тестовое задание\Test\obj\Debug\Test.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\obj\Debug\Test.pdb
+C:\Users\Sergey\Desktop\Тестовое задание\Test\bin\WebActivator.dll
+C:\Users\Sergey\Desktop\Тестовое задание\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+d:\tmp\C#\Тестовое задание\Test\bin\Test.dll.config
+d:\tmp\C#\Тестовое задание\Test\bin\Test.dll
+d:\tmp\C#\Тестовое задание\Test\bin\Test.pdb
+d:\tmp\C#\Тестовое задание\Test\bin\Antlr3.Runtime.dll
+d:\tmp\C#\Тестовое задание\Test\bin\EntityFramework.dll
+d:\tmp\C#\Тестовое задание\Test\bin\EntityFramework.SqlServer.dll
+d:\tmp\C#\Тестовое задание\Test\bin\Microsoft.Web.Infrastructure.dll
+d:\tmp\C#\Тестовое задание\Test\bin\Newtonsoft.Json.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Net.Http.Extensions.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Net.Http.Formatting.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Net.Http.Primitives.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Helpers.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Http.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Http.WebHost.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Mvc.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Optimization.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Providers.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Razor.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.WebPages.Deployment.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.WebPages.dll
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.WebPages.Razor.dll
+d:\tmp\C#\Тестовое задание\Test\bin\WebActivator.dll
+d:\tmp\C#\Тестовое задание\Test\bin\WebGrease.dll
+d:\tmp\C#\Тестовое задание\Test\bin\Antlr3.Runtime.pdb
+d:\tmp\C#\Тестовое задание\Test\bin\EntityFramework.xml
+d:\tmp\C#\Тестовое задание\Test\bin\EntityFramework.SqlServer.xml
+d:\tmp\C#\Тестовое задание\Test\bin\Newtonsoft.Json.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Net.Http.Extensions.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Net.Http.Formatting.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Net.Http.Primitives.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Helpers.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Http.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Http.WebHost.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Mvc.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Optimization.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Providers.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.Razor.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.WebPages.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.WebPages.Deployment.xml
+d:\tmp\C#\Тестовое задание\Test\bin\System.Web.WebPages.Razor.xml
+d:\tmp\C#\Тестовое задание\Test\obj\Debug\Test.csproj.App.config
+d:\tmp\C#\Тестовое задание\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+d:\tmp\C#\Тестовое задание\Test\obj\Debug\Test.dll
+d:\tmp\C#\Тестовое задание\Test\obj\Debug\Test.pdb
+C:\Users\Sergey\Desktop\Тест Михаил\Test\obj\Debug\Test.csproj.App.config
+C:\Users\Sergey\Desktop\Тест Михаил\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergey\Desktop\Тест Михаил\Test\obj\Debug\Test.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\obj\Debug\Test.pdb
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\Test.dll.config
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\Test.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\Test.pdb
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\Antlr3.Runtime.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\EntityFramework.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\EntityFramework.SqlServer.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\Newtonsoft.Json.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Net.Http.Extensions.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Net.Http.Formatting.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Net.Http.Primitives.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Helpers.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Http.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Http.WebHost.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Mvc.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Optimization.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Providers.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Razor.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.WebPages.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\WebActivator.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\WebGrease.dll
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\Antlr3.Runtime.pdb
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\EntityFramework.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\EntityFramework.SqlServer.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\Newtonsoft.Json.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Net.Http.Extensions.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Net.Http.Formatting.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Net.Http.Primitives.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Helpers.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Http.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Http.WebHost.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Mvc.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Optimization.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Providers.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.Razor.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.WebPages.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sergey\Desktop\Тест Михаил\Test\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\Test.dll.config
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\Test.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\Test.pdb
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\Antlr3.Runtime.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\EntityFramework.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\EntityFramework.SqlServer.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\Newtonsoft.Json.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Net.Http.Extensions.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Net.Http.Formatting.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Net.Http.Primitives.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Helpers.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Http.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Http.WebHost.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Mvc.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Optimization.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Providers.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Razor.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.WebPages.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\WebActivator.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\WebGrease.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\Antlr3.Runtime.pdb
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\EntityFramework.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\EntityFramework.SqlServer.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\Newtonsoft.Json.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Net.Http.Extensions.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Net.Http.Formatting.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Net.Http.Primitives.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Helpers.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Http.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Http.WebHost.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Mvc.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Optimization.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Providers.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.Razor.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.WebPages.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\obj\Debug\Test.csproj.App.config
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\obj\Debug\Test.dll
+C:\Users\Sergey\Desktop\Test_Market_Logic\Test\obj\Debug\Test.pdb
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\Test.dll.config
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\Test.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\Test.pdb
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\Antlr3.Runtime.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\EntityFramework.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\EntityFramework.SqlServer.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\Newtonsoft.Json.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Net.Http.Extensions.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Net.Http.Formatting.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Net.Http.Primitives.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Helpers.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Http.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Http.WebHost.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Mvc.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Optimization.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Providers.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Razor.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.WebPages.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\WebActivator.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\WebGrease.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\Antlr3.Runtime.pdb
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\EntityFramework.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\EntityFramework.SqlServer.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\Newtonsoft.Json.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Net.Http.Extensions.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Net.Http.Formatting.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Net.Http.Primitives.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Helpers.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Http.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Http.WebHost.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Mvc.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Optimization.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Providers.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.Razor.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.WebPages.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\obj\Debug\Test.csproj.App.config
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\obj\Debug\Test.dll
+C:\Users\Sergey\Desktop\проэкты\Test_Market_Logic\Test\obj\Debug\Test.pdb
