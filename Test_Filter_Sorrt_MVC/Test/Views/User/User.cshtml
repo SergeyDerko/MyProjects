@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Test.Models.User>
+<table border="1" width="450" style="margin-top:20px;" id="Table">
+    <thead>
+    <tr>
+        <td><strong>Им'я</strong></td>
+        <td><strong>Місто</strong></td>
+        <td><strong>Вік</strong></td>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.City</td>
+            <td>@item.Age</td>
+        </tr>
+    }
+    </tbody>
+</table>
+

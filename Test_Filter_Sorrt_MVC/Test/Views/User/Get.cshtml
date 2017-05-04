@@ -1,0 +1,42 @@
+﻿@using Test.Controllers
+@model IQueryable<Test.Models.User>
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+<label for="citySelect">Фільтр по місту</label>
+<select id="citySelect">
+    <option></option>
+    @foreach (var item in Model.GroupBy(c => c.City))
+    {
+        <option>@item.Key</option>
+    }
+</select>
+<label for="ageSelect">Сортування за віком</label>
+<select id="ageSelect">
+    <option value="@((int)SortType.None)"></option>
+    <option value="@((int)SortType.Desk)">Спочатку старші</option>
+    <option value="@((int)SortType.Ask)">Спочатку молодші</option>
+</select>
+
+<div id="divUsers">
+    @Html.Partial("User", Model)
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#ageSelect, #citySelect").change(function () {
+            var data = {
+                sortType: $("#ageSelect option:selected").val(),
+                searchParam: $("#citySelect option:selected").val()
+            };
+            $.ajax({
+                url: "User/Get",
+                type: "POST",
+                data: data,
+                success: function (data) {
+                    $("#divUsers").html(data);
+                }
+            });
+        });
+    })
+</script>
